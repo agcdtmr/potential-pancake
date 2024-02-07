@@ -390,7 +390,8 @@ $ ls
 <GCP ProjectName>.json
 ```
 
-- [x] You can finally create infrastracture using these terraform commands:
+- [x] Configure Terraform files (main.tf, variables.tf) for your project.
+- [x] Run Terraform commands to initialize, plan, and apply infrastructure changes.
 
 `terraform init`
 `terraform plan`
