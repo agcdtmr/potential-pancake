@@ -194,13 +194,14 @@ Host <VM Name>
   User <GCP AccountName>
   IdentityFile ~/.ssh/<Private key filename>
 ```
-
+Go back to the terminal and try:
 `ssh <VM Name>`
+
+If successful you will see:
 ```
 Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1048-gcp x86_64)
+...
 ```
-
-`which python`
 
 11. **IDE Integration:**
     - [x] Open VSCode -> Go to Extensions
