@@ -18,7 +18,7 @@
 
 
 ### Google Cloud
-- [x] Documentation how to setup [Google Cloud environment](https://github.com/agcdtmr/potential-pancake/blob/main/00-project-complete/00-01-docker-terraform/cloud-env-setup.md)
+- [x] Documentation how to setup [Google Cloud environment](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/cloud-env-setup.md)
 
 ### GitHub Codespaces
 - [x] Setup GitHub Codespaces
