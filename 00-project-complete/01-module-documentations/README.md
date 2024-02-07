@@ -19,6 +19,7 @@
 
 ### Google Cloud
 - [x] Documentation how to setup [Google Cloud environment](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/cloud-env-setup.md)
+- [x] Follow the steps outlined in the [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
 
 ### GitHub Codespaces
 - [x] Setup GitHub Codespaces
