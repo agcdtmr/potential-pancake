@@ -1,4 +1,4 @@
-# Module 1: Containerization and Infrastructure as Code
+# Setting Up a Cloud Development Environment with Docker, Postgres, pgAdmin, and Terraform on GCP
 
 - [x] [1st Step: Environment setup](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#1st-step-environment-setup)
 - [x]  [2nd Step: Introduction to Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#2nd-step-introduction-to-docker)
