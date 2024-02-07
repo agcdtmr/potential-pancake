@@ -74,7 +74,7 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
-<img src="https://github.com/agcdtmr/potential-pancake/blob/main/00-project-complete/hello-world.png">
+<img src="https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/hello-world.png">
 
 - [x] While following the "DE Zoomcamp 1.2.1 - Introduction to Docker" video I got a problem with docker build
 
