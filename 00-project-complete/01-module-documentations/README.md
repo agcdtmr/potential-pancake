@@ -34,7 +34,7 @@
 - [x] Install [Docker](https://formulae.brew.sh/formula/docker) with [Docker Compose](https://formulae.brew.sh/formula/docker-compose) using Homebrew
 - [x] Successful run of `docker run hello-world`
 - [x] Install Terraform using [Homebrew](https://formulae.brew.sh/formula/terraform)
-- [ ] `cd Desktop/potential-pancake/00-project-complete/00-01-docker-terraform`
+- [ ] `cd Desktop/potential-pancake/00-project-complete/`
 
 ## 2nd Step: Introduction to Docker
 
