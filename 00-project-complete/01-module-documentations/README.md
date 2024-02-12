@@ -1,4 +1,4 @@
-# Setting Up a Local Development Environment with Docker, Postgres, pgAdmin, and Terraform (for the Data Engineering zoomcamp)
+# Setting Up Cloud-Based and Local Development Environment with Docker, Postgres, pgAdmin, and Terraform (for the Data Engineering zoomcamp)
 
 - [x] [1st Step: Environment setup](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#1st-step-environment-setup)
 - [x]  [2nd Step: Introduction to Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#2nd-step-introduction-to-docker)
