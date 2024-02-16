@@ -245,9 +245,11 @@ root@localhost:ny_taxi> \dt
 SELECT 0
 Time: 0.010s
 ```
+
+- Let's uninstall pgcli to try another way to run PostgreSQL using anaconda 
 `pip uninstall pgcli`
 
-- [x] Or Run PostgreSQL using anaconda**
+- [x] Run PostgreSQL using anaconda**
 
 `conda install -c conda-forge pgcli`
 `pip install --upgrade pgcli`
