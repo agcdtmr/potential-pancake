@@ -400,6 +400,8 @@ $ ls
 <GCP ProjectName>.json
 ```
 
+## From here you can iterate the infrastrature using Terraform
+
 - [x] Configure Terraform files (main.tf, variables.tf) for your project.
 - [x] Run Terraform commands to initialize, plan, and apply infrastructure changes.
 
