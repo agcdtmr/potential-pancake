@@ -75,7 +75,7 @@ Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 ```
 - [x] Use `htop` for System Monitoring: a command-line tool used to monitor and manage the processes running on a computer. It provides a visual representation of the system's resources, such as CPU usage, memory usage, and more. htop allows you to see which processes are using the most resources and gives you the ability to interactively manage them, such as killing a process if needed.
-- [x] Initial Check with ls: Upon the first ls command, confirm that the VM file system is empty. Validate the absence of any pre-existing files or directories.
+- [x] Initial Check with `ls`: Upon the first ls command, confirm that the VM file system is empty. Validate the absence of any pre-existing files or directories.
 - [x] Execute the command `gcloud --version` to verify the Google Cloud SDK version. 
 
 ```
