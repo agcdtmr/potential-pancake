@@ -22,7 +22,7 @@ Setting up of a comprehensive environment on a Google Cloud Platform (GCP) virtu
 5. **SSH Key Generation:**
    - [x] Open your local machine terminal/powershell
    - [x] Generate SSH keys for secure communication between your local machine and the GCP VM.
-   - [x] Refer to the documentation [here](https://cloud.google.com/compute/docs/connect/create-ssh-keys#rest) for creating an SSH key pair for Compute Engine VM instances using the command: ssh-keygen -t rsa -f ~/.ssh/KEY_FILENAME -C USERNAME -b 2048.
+   - [x] Refer to the documentation [here](https://cloud.google.com/compute/docs/connect/create-ssh-keys#rest) for creating an SSH key pair for Compute Engine VM instances using the command: `ssh-keygen -t rsa -f ~/.ssh/KEY_FILENAME -C USERNAME -b 2048`.
 
 6. **Virtual Machine Creation:**
    - [x] Deploy a virtual machine on GCP configured to host the development environment.
