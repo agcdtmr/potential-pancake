@@ -239,6 +239,7 @@ pip install pgcli
 pgcli -h localhost -U root -d ny_taxi
 ```
 
+Sample Output:
 ```
 Server: PostgreSQL 13.13 (Debian 13.13-1.pgdg120+1)
 Version: 4.0.1
