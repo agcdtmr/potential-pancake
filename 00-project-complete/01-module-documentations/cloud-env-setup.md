@@ -230,8 +230,15 @@ CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS
 
 - [x] Run PostgreSQL using pip**
 
-`pip install pgcli`
-`pgcli -h localhost -U root -d ny_taxi`
+```
+pip install pgcli
+```
+
+- [x] Connect to the PostgreSQL using: 
+```
+pgcli -h localhost -U root -d ny_taxi
+```
+
 ```
 Server: PostgreSQL 13.13 (Debian 13.13-1.pgdg120+1)
 Version: 4.0.1
