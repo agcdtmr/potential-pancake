@@ -320,24 +320,7 @@ Goodbye!
 ```
 
 
-16. **Infrastructure as Code (IaC):**
-
-    - [x] Install Terraform for automated infrastructure provisioning and management.
-
-`cd bin`
-`wget https://releases.hashicorp.com/terraform/1.7.0/terraform_1.7.0_linux_amd64.zip`
-`sudo apt-get update`
-`sudo apt-get install unzip`
-`unzip terraform_1.7.0_linux_amd64.zip`
-`rm terraform_1.7.0_linux_amd64.zip`
-
-
-Configure your main.tf and variables.tf
-`cd <reponame>/<terraform folder>`
-`code <terraform folder>`
-
-
-17. Secure File Transfer
+16. Secure File Transfer
     - [x] Utilize `sftp` for securely transferring credentials to the remote machine.
 
     - [x] Download GCP Service account <GCP ProjectName>.json file:
@@ -400,7 +383,26 @@ $ ls
 <GCP ProjectName>.json
 ```
 
-## From here you can iterate the infrastrature using Terraform
+## Optional: From here you can iterate the infrastrature using Terraform
+
+17. **Infrastructure as Code (IaC):**
+
+    - [x] Install Terraform for automated infrastructure provisioning and management.
+
+`cd bin`
+`wget https://releases.hashicorp.com/terraform/1.7.0/terraform_1.7.0_linux_amd64.zip`
+`sudo apt-get update`
+`sudo apt-get install unzip`
+`unzip terraform_1.7.0_linux_amd64.zip`
+`rm terraform_1.7.0_linux_amd64.zip`
+
+
+Configure your main.tf and variables.tf
+`cd <reponame>/<terraform folder>`
+`code <terraform folder>`
+
+
+
 
 - [x] Configure Terraform files (main.tf, variables.tf) for your project.
 - [x] Run Terraform commands to initialize, plan, and apply infrastructure changes.
