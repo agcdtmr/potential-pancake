@@ -1,6 +1,6 @@
 # Cloud-Based Environment Setup
 
-Learning in public: https://www.linkedin.com/posts/anjcalleja_techproject-gcp-cloud-activity-7163127536321826816-jdzi?utm_source=share&utm_medium=member_desktop
+- Learning in public [post](https://www.linkedin.com/posts/anjcalleja_techproject-gcp-cloud-activity-7163127536321826816-jdzi?utm_source=share&utm_medium=member_desktop)
 
 **Objective:**
 Setting up of a comprehensive environment on a Google Cloud Platform (GCP) virtual machine (VM)
