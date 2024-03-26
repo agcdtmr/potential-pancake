@@ -46,6 +46,9 @@ it is an automated process that takes data from multiple storage locations and a
 
 Data Engineering Lifecycle
 
+![image](https://github.com/agcdtmr/potential-pancake/assets/112581827/d63eeec4-b666-445f-a47c-81f2d4f26078)
+
+
 A good orchestrator handles…
 Workflow management
 Automation
