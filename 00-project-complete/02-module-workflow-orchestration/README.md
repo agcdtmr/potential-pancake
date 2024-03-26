@@ -65,11 +65,11 @@ Feedback Loops 🔁
 Cognitive Load 🧱
 How much do you need to know to do your job?
 
-### 2.2.2 - 🧙‍♂️ Intro to Mage
+### 2.2.2a - 🧙‍♂️ Intro to Mage
 
 What is [Mage.ai](https://www.youtube.com/watch?v=AicKRcK3pa4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=18)? An open-source pipeline tool for orchestrating, transforming, and integrating data
 
-### 2.2.2 - 🧙‍♂️ [Configure Mage](https://www.youtube.com/watch?v=tNiV7Wp08XE)
+### 2.2.2b - 🧙‍♂️ [Configure Mage](https://www.youtube.com/watch?v=tNiV7Wp08XE)
 
 Let's get started!
 
@@ -143,6 +143,8 @@ This repository should have the following structure:
 2. [Mage Slack](https://www.mage.ai/chat): a good place to ask questions or get help from the Mage team.
 3. [DTC Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_2_workflow_orchestration): a good place to get help from the community on course-specific inquireies.
 4. [Mage GitHub](https://github.com/mage-ai/mage-ai): a good place to open issues or feature requests.
+
+### 2.2.2c - 🧙‍♂️ A Simple Pipeline
 
 ## Resources
 
