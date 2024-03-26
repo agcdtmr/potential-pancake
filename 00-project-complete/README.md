@@ -13,7 +13,7 @@ This repository encompasses a wide array of tools and resources focused on Conta
 - [x] [Module 1: Containerization and Infrastructure as Code](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations)
 
 ## In Progress
-- [ ] [Module 2: Workflow Orchestration]()
+- [ ] [Module 2: Workflow Orchestration](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/02-module-workflow-orchestration)
 
 ## Backlog
 - [ ] [Workshop 1: Data Ingestion]()
