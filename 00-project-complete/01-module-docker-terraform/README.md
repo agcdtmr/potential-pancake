@@ -1,34 +1,35 @@
-# Setting Up Cloud-Based with GCP and Local Development Environment with Docker, Postgres, pgAdmin, and Terraform (for the Data Engineering Team)
+# Module 01: Containerization and Infrastructure as Code
 
 - [x] [1st Step: Environment setup](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#1st-step-environment-setup)
-- [x]  [2nd Step: Introduction to Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#2nd-step-introduction-to-docker)
-- [x]  [3rd Step: Running Postgres locally with Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#3rd-step-running-postgres-locally-with-docker)
-- [x]  [4th Step: Using pgcli for connecting to the database](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#4th-step-using-pgcli-for-connecting-to-the-database)
-- [x]  [5th Step: How to re-run the existing Postgres container/server in Docker of this project](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#5th-step-how-to-re-run-the-existing-postgres-containerserver-in-docker-of-this-project)
-- [x]  [6th Step: Running pgAdmin](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#6th-step-running-pgadmin)
-- [x]  [7th Step: Running Postgres and pgAdmin with Docker-Compose](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#7th-step-running-postgres-and-pgadmin-with-docker-compose)
-- [x]  Setting up infrastructure on [GCP with Terraform](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/terraform)
-- [x]  [Module 1 Homework](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/homework-module1-agcdtmr.md)
+- [x] [2nd Step: Introduction to Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#2nd-step-introduction-to-docker)
+- [x] [3rd Step: Running Postgres locally with Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#3rd-step-running-postgres-locally-with-docker)
+- [x] [4th Step: Using pgcli for connecting to the database](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#4th-step-using-pgcli-for-connecting-to-the-database)
+- [x] [5th Step: How to re-run the existing Postgres container/server in Docker of this project](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#5th-step-how-to-re-run-the-existing-postgres-containerserver-in-docker-of-this-project)
+- [x] [6th Step: Running pgAdmin](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#6th-step-running-pgadmin)
+- [x] [7th Step: Running Postgres and pgAdmin with Docker-Compose](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#7th-step-running-postgres-and-pgadmin-with-docker-compose)
+- [x] Setting up infrastructure on [GCP with Terraform](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/terraform)
+- [x] [Module 1 Homework](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/homework-module1-agcdtmr.md)
 
-
-## 1st Step: Environment setup 
+## 1st Step: Environment setup
 
 ### Browser setup
+
 - [x] Fork [DE repo](https://github.com/DataTalksClub/data-engineering-zoomcamp)
 
-
 ### Google Cloud
+
 - [x] Documentation how to setup [Google Cloud environment](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/cloud-env-setup.md)
 - [x] Follow the steps outlined in the [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
 
 ### GitHub Codespaces
+
 - [x] Setup GitHub Codespaces
 
 ### Local setup
 
 - [x] Clone [DE repo](https://github.com/DataTalksClub/data-engineering-zoomcamp) using ssh
 - [x] Install Python using [Homebrew](https://github.com/agcdtmr/potential-pancake/blob/main/01-module-docker-terraform/how-to-install-python-on-macos-using-homebrew.md)
-- [x] Install [Google Cloud SDK](https://cloud.google.com/sdk?hl=en) using [Homebrew](https://formulae.brew.sh/cask/google-cloud-sdk) `brew install --cask google-cloud-sdk`. 
+- [x] Install [Google Cloud SDK](https://cloud.google.com/sdk?hl=en) using [Homebrew](https://formulae.brew.sh/cask/google-cloud-sdk) `brew install --cask google-cloud-sdk`.
 - [x] Install the [gcloud CLI](https://cloud.google.com/sdk/docs/install) Note: To determine your machine hardware name, run `uname -m` from a command line.
 - [x] Initialize the gcloud CLI `gcloud init`
 - [x] Log in to GCP (on terminal) and choose the project for this repo
@@ -41,17 +42,20 @@
 - [x] Watch [DE Zoomcamp 1.2.1 - Introduction to Docker](https://www.youtube.com/watch?v=EYNwNlOrpr0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
 - [x] In this step I used Google Cloud environment, make sure to follow the [Google Cloud environment setup](https://github.com/agcdtmr/potential-pancake/blob/main/00-project-complete/00-01-docker-terraform/cloud-env-setup.md)
 - [x] I copied the External IP of VM I created for this project
-- [x] Paste the configuration snippet below to the config file, to automize the connection of my VM to my local machine via Secure Shell 
+- [x] Paste the configuration snippet below to the config file, to automize the connection of my VM to my local machine via Secure Shell
+
 ```
 Host <VM Name>
   HostName <External IP>
   User <GCP username>
   IdentityFile ~/.ssh/<name of private ssh key>
 ```
+
 - [x] Back to terminal, run `ssh <VM Name>`
 - [x] Once I am in to the VM, run `docker run hello-world`
 
 We can move forward if you get this message:
+
 ```
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -74,6 +78,7 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+
 <img src="https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/hello-world.png">
 
 - [x] While following the "DE Zoomcamp 1.2.1 - Introduction to Docker" video I got a problem with docker build
@@ -86,6 +91,7 @@ DEPRECATED: The legacy builder is deprecated and will be removed in a future rel
 error checking context: can't stat '/home/potential-pancake/01-docker-terraform/2_docker_sql/ny_taxi_postgres_data'
 
 ```
+
 - [x] Go to this [docker buildx site](https://docs.docker.com/go/buildx/) to fix the error above
 - [x] Reinstall [Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 - [ ] Go to your file where Dockerfile is
@@ -101,9 +107,8 @@ COPY pipeline.py pipeline.py
 ENTRYPOINT [ "python", "pipeline.py" ]
 ```
 
-
-
 - [x] and run:
+
 ```
 docker buildx create --use
 docker buildx inspect default
@@ -112,6 +117,7 @@ docker buildx build -t test:pandas .
 ```
 
 it will return similar output like this:
+
 ```
 01-docker-terraform/2_docker_sql$ docker buildx build -t test:pandas .
 [+] Building 77.6s (10/10) FINISHED                                                                      docker:default
@@ -160,7 +166,7 @@ it will return similar output like this:
 - [x] Because of all the issues and challenges, I decided to do the project in my local machine and successfully redone it
 
 ```
-% cd test-docker 
+% cd test-docker
 (base) test-docker % touch Dockerfile
 (base) test-docker % docker run hello-world
 
@@ -203,11 +209,11 @@ Start a build
  => [internal] load metadata for docker.io/library/python:3.9              0.0s
  => [1/2] FROM docker.io/library/python:3.9                                0.0s
  => [2/2] RUN pip install pandas                                          16.6s
- => exporting to image                                                     0.5s 
- => => exporting layers                                                    0.4s 
- => => writing image sha256:c0b50f0933124abc78f2b75e58bba421b7164b52e55df  0.0s 
- => => naming to docker.io/library/test:pandas                             0.0s 
-                                                                                
+ => exporting to image                                                     0.5s
+ => => exporting layers                                                    0.4s
+ => => writing image sha256:c0b50f0933124abc78f2b75e58bba421b7164b52e55df  0.0s
+ => => naming to docker.io/library/test:pandas                             0.0s
+
 View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yy1pos96ffg0b2ea0ozogfkza
 (base)test-docker % docker build -t test:pandas .
 [+] Building 0.0s (6/6) FINISHED                           docker:desktop-linux
@@ -228,21 +234,21 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
 Dockerfile
 (base) test-docker % docker run -it test:pandas
 root@98f844a66877:/# python
-Python 3.9.18 (main, Jan 17 2024, 05:48:03) 
+Python 3.9.18 (main, Jan 17 2024, 05:48:03)
 [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import pandas
-<stdin>:1: DeprecationWarning: 
+<stdin>:1: DeprecationWarning:
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
 If this would cause problems for you,
 please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
+
 >>> pandas.__version__
 '2.2.0'
->>> 
-root@98f844a66877:/# 
+>>>
+root@98f844a66877:/#
 exit
 (base) test-docker % ls
 Dockerfile
@@ -256,9 +262,9 @@ Dockerfile
 Dockerfile:5
 --------------------
    3 |     RUN pip install pandas
-   4 |     
+   4 |
    5 | >>> COPY pipeline.py
-   6 |     
+   6 |
    7 |     ENTRYPOINT [ "bash" ]
 --------------------
 ERROR: failed to solve: dockerfile parse error on line 5: COPY requires at least two arguments, but only one was provided. Destination could not be determined
@@ -283,19 +289,19 @@ View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux
  => => naming to docker.io/library/test:pandas                             0.0s
 
 View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ji14kt72trrq6ymm27f4dadov
-(base) test-docker % docker run -it test:pandas   
+(base) test-docker % docker run -it test:pandas
 root@07aa220c8717:/app# ls
 pipeline.py
 root@07aa220c8717:/app# pwd
 /app
-root@07aa220c8717:/app# python pipeline.py 
-/app/pipeline.py:1: DeprecationWarning: 
+root@07aa220c8717:/app# python pipeline.py
+/app/pipeline.py:1: DeprecationWarning:
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
 If this would cause problems for you,
 please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
+
   import pandas as pd
 job finished successfully
 root@07aa220c8717:/app# exit
@@ -319,14 +325,14 @@ exit
  => => naming to docker.io/library/test:pandas                             0.0s
 
 View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/p8ii86x49y8wj2cb1g4dw3emu
-(base) test-docker % docker run -it test:pandas   
-/app/pipeline.py:3: DeprecationWarning: 
+(base) test-docker % docker run -it test:pandas
+/app/pipeline.py:3: DeprecationWarning:
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
 If this would cause problems for you,
 please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
+
   import pandas as pd
 ['pipeline.py']
 Traceback (most recent call last):
@@ -334,28 +340,28 @@ Traceback (most recent call last):
     day = sys.argv[1]
 IndexError: list index out of range
 (base) test-docker % docker run -it test:pandas 2024-01-26
-/app/pipeline.py:3: DeprecationWarning: 
+/app/pipeline.py:3: DeprecationWarning:
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
 If this would cause problems for you,
 please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
+
   import pandas as pd
 ['pipeline.py', '2024-01-26']
 job finished successfully for day = 2024-01-26
 (base) test-docker % docker run -it test:pandas 2024-01-26 123 hello
-/app/pipeline.py:3: DeprecationWarning: 
+/app/pipeline.py:3: DeprecationWarning:
 Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
 (to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
 but was not found to be installed on your system.
 If this would cause problems for you,
 please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
-        
+
   import pandas as pd
 ['pipeline.py', '2024-01-26', '123', 'hello']
 job finished successfully for day = 2024-01-26
-(base) test-docker % 
+(base) test-docker %
 ```
 
 ## 3rd Step: Running Postgres locally with Docker
@@ -383,18 +389,18 @@ CONTAINER ID   IMAGE            COMMAND                  CREATED       STATUS   
 d01d30aa729e   dpage/pgadmin4   "/entrypoint.sh"         3 hours ago   Up 3 hours   443/tcp, 0.0.0.0:8080->80/tcp   2_docker_sql-pgadmin-1
 (base) test-docker % docker rm 5eec8d14f678
 Error response from daemon: You cannot remove a running container 5eec8d14f678093f2c3e05391992804ff563c491330fa57bd7927c1164b5bce1. Stop the container before attempting removal or force remove
-(base) test-docker % docker ps             
+(base) test-docker % docker ps
 CONTAINER ID   IMAGE            COMMAND                  CREATED       STATUS       PORTS                           NAMES
 5eec8d14f678   postgres:13      "docker-entrypoint.s…"   3 hours ago   Up 3 hours   0.0.0.0:5432->5432/tcp          2_docker_sql-pgdatabase-1
 d01d30aa729e   dpage/pgadmin4   "/entrypoint.sh"         3 hours ago   Up 3 hours   443/tcp, 0.0.0.0:8080->80/tcp   2_docker_sql-pgadmin-1
 (base) test-docker % docker rm -f 5eec8d14f678
 5eec8d14f678
-(base) test-docker % docker ps                
+(base) test-docker % docker ps
 CONTAINER ID   IMAGE            COMMAND            CREATED       STATUS       PORTS                           NAMES
 d01d30aa729e   dpage/pgadmin4   "/entrypoint.sh"   3 hours ago   Up 3 hours   443/tcp, 0.0.0.0:8080->80/tcp   2_docker_sql-pgadmin-1
 (base) test-docker % docker rm -f d01d30aa729e
 d01d30aa729e
-(base) test-docker % docker run -it \         
+(base) test-docker % docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
   -e POSTGRES_DB="ny_taxi" \
@@ -456,11 +462,11 @@ c79b8db4f005fbdcbdf6f589687b6f54b8e8427c6f8d58c7e069c829f01025e6
 beb0928fc0a9a18a9bc4623a95bb905f895f68b4eeb173805fa53914d0c43bb8
 
 Total reclaimed space: 1.232MB
-(base) test-docker % docker ps -a          
+(base) test-docker % docker ps -a
 
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-(base) test-docker % docker run -it \                                       
-  -e POSTGRES_USER="root" \                              
+(base) test-docker % docker run -it \
+  -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
   -e POSTGRES_DB="ny_taxi" \
   -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
@@ -625,8 +631,6 @@ root@localhost:ny_taxi>
 
 ```
 
-
-
 - [x] Install and run jupyter notebook
 
 ```
@@ -712,7 +716,7 @@ Requirement already satisfied: pycparser in ./anaconda3/lib/python3.11/site-pack
  | |_| | '_ \/ _` / _` |  _/ -_)
   \___/| .__/\__,_\__,_|\__\___|
        |_|
-                       
+
 Read the migration plan to Notebook 7 to learn about the new features and the actions to take if you are using extensions.
 
 https://jupyter-notebook.readthedocs.io/en/latest/migrate_to_notebook7.html
@@ -727,9 +731,8 @@ Please note that updating to Notebook 7 might break some of your extensions.
 [I 12:38:19.454 NotebookApp] http://localhost:8888/?token=e791ce74e0011a189cdd9319ca267e91a2e37350b46d090d
 [I 12:38:19.454 NotebookApp]  or http://127.0.0.1:8888/?token=e791ce74e0011a189cdd9319ca267e91a2e37350b46d090d
 [I 12:38:19.454 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 12:38:19.470 NotebookApp] 
+[C 12:38:19.470 NotebookApp]
 ```
-
 
 - [x] Download the dataset of NY Taxi
 
@@ -754,7 +757,6 @@ ny_taxi_postgres_data		yellow_tripdata_2021-01.csv
 END
 ```
 
-
 - [x] Reading csv with pandas
 - [x] Upload-data.ipyd change the following code:
 
@@ -774,7 +776,6 @@ df = pd.read_csv('yellow_tripdata_2023-01.csv', nrows=100)
 print(df)
 ```
 
-
 - [x] when running `print(pd.io.sql.get_schema(df, name='yellow_taxi_data', con=engine))`. I get the error "ModuleNotFoundError: No module named 'psycopg2'"
 
 ```
@@ -791,7 +792,7 @@ Building wheels for collected packages: psycopg2
 Successfully built psycopg2
 Installing collected packages: psycopg2
 Successfully installed psycopg2-2.9.9
-(base) #@CI00341580 test-docker % 
+(base) #@CI00341580 test-docker %
 
 ```
 
@@ -802,8 +803,6 @@ pip install sqlalchemy
 Requirement already satisfied: sqlalchemy in /Users/#/anaconda3/lib/python3.11/site-packages (1.4.39)
 
 ```
-
-
 
 - [x] Generating Postgres compatible DDL
 
@@ -861,20 +860,19 @@ root@localhost:ny_taxi>
 
 ```
 
-
 - [x] Ingesting the CSV data in chunks
 
-
 Error
+
 ```
-while True: 
+while True:
     t_start = time()
 
     df = next(df_iter)
 
     df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
     df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
-    
+
     df.to_sql(name='yellow_taxi_data', con=engine, if_exists='append')
 
     t_end = time()
@@ -884,7 +882,7 @@ while True:
 ---------------------------------------------------------------------------
 StopIteration                             Traceback (most recent call last)
 Cell In[103], line 4
-      1 while True: 
+      1 while True:
       2     t_start = time()
 ----> 4     df = next(df_iter)
       6     df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
@@ -925,14 +923,13 @@ File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper
 
 File ~/anaconda3/lib/python3.11/site-packages/pandas/_libs/parsers.pyx:839, in pandas._libs.parsers.TextReader.read_low_memory()
 
-StopIteration: 
+StopIteration:
 
 ```
-
 
 - [x] I asked ChatGPT what could be wrong
 
-```
+````
 It looks like you're encountering a `StopIteration` error, which is raised when there are no more items to be returned by the iterator. In Python, the `next()` function raises `StopIteration` when it reaches the end of the iterator.
 
 In your case, it seems that the `df_iter` iterator has reached the end of the data. You are using the `next(df_iter)` statement to get the next chunk of data, and when there are no more chunks, it raises the `StopIteration` error.
@@ -951,18 +948,18 @@ while True:
 
     df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
     df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
-    
+
     df.to_sql(name='yellow_taxi_data', con=engine, if_exists='append')
 
     t_end = time()
 
     print('inserted another chunk, took %.3f second' % (t_end - t_start))
-```
+````
 
 This modification ensures that the loop breaks when there are no more items in the iterator, preventing the `StopIteration` error from being raised.
 
 This was the result
- 
+
 ```
 root@localhost:ny_taxi> SELECT count(1) FROM yellow_taxi_data
 +---------+
@@ -975,8 +972,8 @@ Time: 0.617s
 root@localhost:ny_taxi>
 ```
 
-
 Note: if you have problems with pgcli, check the video below for an alternative way to connect to your database
+
 - [ ] DE Zoomcamp 1.2.2 - Optional: [Connecting to Postgres with Jupyter and Pandas](https://www.youtube.com/watch?v=3IkfkTwqHx4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=6)
 
 ## 5th Step: How to re-run the existing Postgres container/server in Docker of this project
@@ -985,8 +982,9 @@ Note: if you have problems with pgcli, check the video below for an alternative 
 
 - [x] Open Docker Desktop
 - [x] Go to terminal and go to your project file
-`cd 00-project-complete/00-01-docker-terraform/test-module1`
+      `cd 00-project-complete/00-01-docker-terraform/test-module1`
 - [x] Use commands below to connect to the postgres database
+
 ```
 docker stop pg-database
 docker start pg-database
@@ -999,6 +997,7 @@ root@localhost:ny_taxi> SELECT count(1) FROM yellow_taxi_data
 ## 6th Step: Running pgAdmin
 
 - [x] Running pgAdmin
+
 ```
 docker run -it \
   -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
@@ -1009,7 +1008,6 @@ docker run -it \
 
 - [x] Running Postgres and pgAdmin together
 
-
 - [x] Register a server
 
 ```
@@ -1019,6 +1017,7 @@ engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')
 
 Server Name: Local Docker
 Connection:
+
 - Host name/address: localhost
 - Port: 5432
 - Maintenance database: postgres
@@ -1030,17 +1029,16 @@ Connection:
 
 [docker network create documentation](https://docs.docker.com/engine/reference/commandline/network_create/)
 
-
 - [x] Running Postgres and pgAdmin together
 
 - [x] Create a network
+
 ```
 docker network create <name you want for the network>
 docker network create pg-network
 ```
 
-
- - [x] Run Postgres (change the path)
+- [x] Run Postgres (change the path)
 
 ```
 
@@ -1059,12 +1057,14 @@ docker run -it \
 
 pgcli -h localhost -p 5432 -u root -d ny_taxi
 ```
+
 - [x] Check if the data still exist
+
 ```
 root@localhost:ny_taxi> SELECT count(1) FROM yellow_taxi_data
 ```
 
- - [x] Run pgAdmin
+- [x] Run pgAdmin
 
 ```
 docker run -it \
@@ -1077,6 +1077,7 @@ docker run -it \
 ```
 
 - [x] Go back to localhost:8080 or pgadmin server and register the postgres server
+
 ```
 ## type of db: user:password@localhost:port/dbName
 engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')
@@ -1090,26 +1091,29 @@ engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi')
 - Username: root
 - Password: root
 
-
 ## 7th Step: Running Postgres and pgAdmin with Docker-Compose
 
 - [x] In this step, make sure your 'ny_taxi_postgres_data' folder and docker-compose.yaml is in one directory
 - [x] When you did that run:
+
 ```
 docker-compose up
 ```
+
 - [x] or with -d (detach) so you can continously working in one terminal
+
 ```
 docker-compose up -d
 ```
 
 - [x] The commands above will return
+
 ```
 [+] Building 0.0s (0/0)                                                                               docker:desktop-linux
 [+] Running 3/3
- ✔ Network test-module1_default         Created                                                                       0.0s 
- ✔ Container test-module1-pgdatabase-1  Started                                                                       0.0s 
- ✔ Container test-module1-pgadmin-1     Started                                                                       0.0s 
+ ✔ Network test-module1_default         Created                                                                       0.0s
+ ✔ Container test-module1-pgdatabase-1  Started                                                                       0.0s
+ ✔ Container test-module1-pgadmin-1     Started                                                                       0.0s
 ```
 
 - [x] Go to http://localhost:8080/ and register the postgres server:
@@ -1122,8 +1126,7 @@ docker-compose up -d
 - Username: root
 - Password: root
 
-
 - [x] On the left side of your pgadmin window, you can click the dropdown for 'Server'. Find your newly created Server and Database.
 - [x] Try: Go to yellow_taxi_data under Table and view/edit data -> First 100 row.
 - [x] From here I can continue working with the data inside the postgres server using pgadmin GUI.
-- [x]  `docker-compose down` to stop the containers.
+- [x] `docker-compose down` to stop the containers.
