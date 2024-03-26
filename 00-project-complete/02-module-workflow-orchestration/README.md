@@ -110,7 +110,7 @@ We just initialized a new mage repository. It will be present in your project un
 This repository should have the following structure:
 
 ```
-.
+.workflow-orchestration-mage
 ├── mage_data
 │   └── magic-zoomcamp
 ├── magic-zoomcamp
