@@ -1,4 +1,4 @@
-# Setting Up a Cloud Development Environment with Docker, Postgres, pgAdmin, and Terraform on GCP
+# Setting Up Cloud-Based with GCP and Local Development Environment with Docker, Postgres, pgAdmin, and Terraform (for the Data Engineering Team)
 
 - [x] [1st Step: Environment setup](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#1st-step-environment-setup)
 - [x]  [2nd Step: Introduction to Docker](https://github.com/agcdtmr/potential-pancake/tree/an-data-engineer-project/00-project-complete/01-module-documentations#2nd-step-introduction-to-docker)
@@ -19,6 +19,7 @@
 
 ### Google Cloud
 - [x] Documentation how to setup [Google Cloud environment](https://github.com/agcdtmr/potential-pancake/blob/an-data-engineer-project/00-project-complete/01-module-documentations/cloud-env-setup.md)
+- [x] Follow the steps outlined in the [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
 
 ### GitHub Codespaces
 - [x] Setup GitHub Codespaces
@@ -34,7 +35,6 @@
 - [x] Install [Docker](https://formulae.brew.sh/formula/docker) with [Docker Compose](https://formulae.brew.sh/formula/docker-compose) using Homebrew
 - [x] Successful run of `docker run hello-world`
 - [x] Install Terraform using [Homebrew](https://formulae.brew.sh/formula/terraform)
-- [ ] `cd Desktop/potential-pancake/00-project-complete/`
 
 ## 2nd Step: Introduction to Docker
 

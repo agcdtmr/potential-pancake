@@ -1,18 +1,18 @@
 # Cloud-Based Environment Setup
 
+- Learning in public [post](https://www.linkedin.com/posts/anjcalleja_techproject-gcp-cloud-activity-7163127536321826816-jdzi?utm_source=share&utm_medium=member_desktop).
+
 **Objective:**
 Setting up of a comprehensive environment on a Google Cloud Platform (GCP) virtual machine (VM)
-
-Follow the steps outlined in the [video tutorial](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
 
 **Project Steps:**
 
 1. **Create Google Cloud Platform Account:**
-   - [x] Create a new email address to use for this project and get 300euros worth of credit from Google.
+   - [x] Register a new email address dedicated to this project to obtain €300 in Google 
    - [x] Create an account for Google Cloud Platform. 
 
 2. **Log in to GCP:**
-   - [x] Access GCP through your web browser and log in to your account.
+   - [x] Access the Google Cloud Platform through a web browser and log in to the newly created account.
 
 3. **Project Initialization:**
    - [x] Create a new GCP project to organize your resources efficiently.
@@ -24,10 +24,10 @@ Follow the steps outlined in the [video tutorial](https://www.youtube.com/watch?
 5. **SSH Key Generation:**
    - [x] Open your local machine terminal/powershell
    - [x] Generate SSH keys for secure communication between your local machine and the GCP VM.
-   - [x] This [document](https://cloud.google.com/compute/docs/connect/create-ssh-keys#rest) describes how to create an SSH key pair for Compute Engine virtual machine (VM) instances. Command: `ssh-keygen -t rsa -f ~/.ssh/KEY_FILENAME -C USERNAME -b 2048`
+   - [x] Refer to the documentation [here](https://cloud.google.com/compute/docs/connect/create-ssh-keys#rest) for creating an SSH key pair for Compute Engine VM instances using the command: `ssh-keygen -t rsa -f ~/.ssh/KEY_FILENAME -C USERNAME -b 2048`.
 
 6. **Virtual Machine Creation:**
-   - [x] Create a virtual machine on GCP to host your development environment.
+   - [x] Deploy a virtual machine on GCP configured to host the development environment.
    - [x] VM details: Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1048-gcp x86_64)
 
 7. **SSH Connection Setup:**
@@ -77,7 +77,7 @@ Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
 applicable law.
 ```
 - [x] Use `htop` for System Monitoring: a command-line tool used to monitor and manage the processes running on a computer. It provides a visual representation of the system's resources, such as CPU usage, memory usage, and more. htop allows you to see which processes are using the most resources and gives you the ability to interactively manage them, such as killing a process if needed.
-- [x] Initial Check with ls: Upon the first ls command, confirm that the VM file system is empty. Validate the absence of any pre-existing files or directories.
+- [x] Initial Check with `ls`: Upon the first ls command, confirm that the VM file system is empty. Validate the absence of any pre-existing files or directories.
 - [x] Execute the command `gcloud --version` to verify the Google Cloud SDK version. 
 
 ```
@@ -177,7 +177,7 @@ Try running: `docker run -it ubuntu bash` if it works
 `which docker-compose-linux-x86_64 `
 `docker ps`
 
-9. **Clone the repository using HTTPS:**
+9. **Clone your project repository using HTTPS:**
     - [x] `git clone <HTTPS link>`
 
 
@@ -196,13 +196,14 @@ Host <VM Name>
   User <GCP AccountName>
   IdentityFile ~/.ssh/<Private key filename>
 ```
-
+Go back to the terminal and try:
 `ssh <VM Name>`
+
+If successful you will see:
 ```
 Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1048-gcp x86_64)
+...
 ```
-
-`which python`
 
 11. **IDE Integration:**
     - [x] Open VSCode -> Go to Extensions
@@ -216,7 +217,7 @@ Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1048-gcp x86_64)
     - [x] Install docker-compose for managing multi-container Docker applications.
 
 13. **Database Interaction:**
-    - [x] Install pgcli for PostgreSQL interaction.
+- [x] Install pgcli for PostgreSQL interaction.
 
 `docker ps`
 Go to the file where "docker-compose.yaml" is, then run:
@@ -229,10 +230,18 @@ CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS
 37e21e00ba1b   dpage/pgadmin4   "/entrypoint.sh"         11 seconds ago   Up 7 seconds   443/tcp, 0.0.0.0:8080->80/tcp, :::8080->80/tcp   2_docker_sql-pgadmin-1
 ```
 
-**Run PostgreSQL using pip**
+- [x] Run PostgreSQL using pip**
 
-`pip install pgcli`
-`pgcli -h localhost -U root -d ny_taxi`
+```
+pip install pgcli
+```
+
+- [x] Connect to the PostgreSQL using: 
+```
+pgcli -h localhost -U root -d ny_taxi
+```
+
+Sample Output:
 ```
 Server: PostgreSQL 13.13 (Debian 13.13-1.pgdg120+1)
 Version: 4.0.1
@@ -246,9 +255,11 @@ root@localhost:ny_taxi> \dt
 SELECT 0
 Time: 0.010s
 ```
+
+- Let's uninstall pgcli to try another way to run PostgreSQL using anaconda 
 `pip uninstall pgcli`
 
-**Run PostgreSQL using anaconda**
+- [x] Run PostgreSQL using anaconda**
 
 `conda install -c conda-forge pgcli`
 `pip install --upgrade pgcli`
@@ -279,8 +290,8 @@ Time: 0.012s
     - [x] Configure port-forwarding in Visual Studio Code to connect to pgAdmin and Jupyter from your local machine.
 
 
-**Uploading Data to PostgresSQL**
-Run `wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz` where your upload-data.ipynb is
+15. Uploading Data to PostgresSQL
+    - [x] Run `wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz` where your upload-data.ipynb is
 
 `pgcli -h localhost -U root -d ny_taxi`
 
@@ -311,27 +322,10 @@ Goodbye!
 ```
 
 
-15. **Infrastructure as Code (IaC):**
-
-    - [x] Install Terraform for automated infrastructure provisioning and management.
-
-`cd bin`
-`wget https://releases.hashicorp.com/terraform/1.7.0/terraform_1.7.0_linux_amd64.zip`
-`sudo apt-get update`
-`sudo apt-get install unzip`
-`unzip terraform_1.7.0_linux_amd64.zip`
-`rm terraform_1.7.0_linux_amd64.zip`
-
-
-Configure your main.tf and variables.tf
-`cd <reponame>/<terraform folder>`
-`code <terraform folder>`
-
-
-**Secure File Transfer:**
+16. Secure File Transfer
     - [x] Utilize `sftp` for securely transferring credentials to the remote machine.
 
-Download GCP Service account <GCP ProjectName>.json file:
+    - [x] Download GCP Service account <GCP ProjectName>.json file:
 ```
 Create a service account and obtain the credentials (JSON key file) for Google Cloud in the context of using Terraform
 
@@ -366,7 +360,7 @@ Set the GOOGLE_APPLICATION_CREDENTIALS environment variable to point to the loca
 `gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS`
 ```
 
-Go back to terminal of your local machine
+ - [x] Go back to terminal of your local machine
 `sftp <VMName>`
 
 ```
@@ -391,13 +385,34 @@ $ ls
 <GCP ProjectName>.json
 ```
 
+## Optional: From here you can iterate the infrastrature using Terraform
 
-   - [x] Create infrastracture
+17. **Infrastructure as Code (IaC):**
+
+    - [x] Install Terraform for automated infrastructure provisioning and management.
+
+`cd bin`
+`wget https://releases.hashicorp.com/terraform/1.7.0/terraform_1.7.0_linux_amd64.zip`
+`sudo apt-get update`
+`sudo apt-get install unzip`
+`unzip terraform_1.7.0_linux_amd64.zip`
+`rm terraform_1.7.0_linux_amd64.zip`
+
+
+Configure your main.tf and variables.tf
+`cd <reponame>/<terraform folder>`
+`code <terraform folder>`
+
+
+
+
+- [x] Configure Terraform files (main.tf, variables.tf) for your project.
+- [x] Run Terraform commands to initialize, plan, and apply infrastructure changes.
 
 `terraform init`
 `terraform plan`
 `terraform apply`
 
 
-16. **Environment Cleanup:**
+18. **Environment Cleanup:**
     - [x] Learn the process of shutting down and removing the GCP VM instance to manage resources effectively.
